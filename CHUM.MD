@@ -8,6 +8,7 @@ Linux op stations: 192.168.65.20, 10.50.37.248
 Windws OP: 192.168.65.10, 10.50.38.70
 
 ```
+```
 
 # Control Socket
 ## Set up control Socket 
@@ -29,6 +30,7 @@ ssh -S /tmp/jump jump -O forward -L1111:192.168.28.100:80 -L3333:192.168.28.100:
 ssh -S /t,mp/jump jump -O cancel -L1111:192.168.1.100:80
 ssh -S /tmo/jump jump -O cancel -D9050
 
+```
 # Penetration Testing 
 
 ## 6 Phases 
