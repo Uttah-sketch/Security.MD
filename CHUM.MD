@@ -1,5 +1,5 @@
+# Security
 ```
-# Security 
 HOUT-005-M 
 STACK # 19 
 PASS: NGhXitkmKFkviR3
@@ -8,9 +8,8 @@ Linux op stations: 192.168.65.20, 10.50.37.248
 Windws OP: 192.168.65.10, 10.50.38.70
 
 ```
-```
-
 # Control Socket
+```
 ## Set up control Socket 
 ssh -MS /tmp/jump student@10.50.37.133
 ## Ping sweep from jump box 
