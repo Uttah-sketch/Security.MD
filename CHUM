@@ -1,6 +1,4 @@
 # Security 
-'''
-
 HOUT-005-M 
 STACK # 19 
 PASS: NGhXitkmKFkviR3
@@ -28,7 +26,29 @@ ssh -S /tmp/jump jump -O forward -L1111:192.168.28.100:80 -L3333:192.168.28.100:
 ssh -S /t,mp/jump jump -O cancel -L1111:192.168.1.100:80
 ssh -S /tmo/jump jump -O cancel -D9050
 
-'''
+# Penetration Testing 
+
+## 6 Phases 
+* Mission definition 
+* Recon 
+* Footprinting 
+* Explotation & Initial Access
+* Post-Explotation 
+* Document Mission
+
+### Phase 1 Mission definition 
+* Define Goals, scope and RoE
+* 
+
+### Phase 2 Recon 
+
+### Phase 3 Footprinting 
+
+### Phase 4 Exploitation & Initial Access 
+
+### Phase 5 Post-Exploitation 
+
+### Phase 6 Document Mission 
 
 
 
