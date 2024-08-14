@@ -59,6 +59,11 @@ ssh -S /tmo/jump jump -O cancel -D9050
 
 ```
 
+# nmap Scripts
+
+```
+/usr/share/nmap/scripts -> Locationof nmap scripts
+```
 
 
 
