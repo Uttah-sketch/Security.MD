@@ -31,6 +31,8 @@ ssh -S /t,mp/jump jump -O cancel -L1111:192.168.1.100:80
 ssh -S /tmo/jump jump -O cancel -D9050
 
 ```
+
+``` 
 # Penetration Testing 
 
 ## 6 Phases 
@@ -54,6 +56,8 @@ ssh -S /tmo/jump jump -O cancel -D9050
 ### Phase 5 Post-Exploitation 
 
 ### Phase 6 Document Mission 
+
+```
 
 
 
