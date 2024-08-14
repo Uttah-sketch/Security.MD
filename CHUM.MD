@@ -32,9 +32,10 @@ ssh -S /tmo/jump jump -O cancel -D9050
 
 ```
 
-``` 
+
 # Penetration Testing 
 
+```
 ## 6 Phases 
 * Mission definition 
 * Recon 
