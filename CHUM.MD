@@ -64,6 +64,11 @@ ssh -S /tmo/jump jump -O cancel -D9050
 ```
 /usr/share/nmap/scripts -> Locationof nmap scripts
 ```
+# Web Exploitation 
+## Day #1 
 
+```
+
+```
 
 
