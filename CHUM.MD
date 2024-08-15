@@ -116,18 +116,79 @@ wget --load-cookies cookies.txt -p https://website/interesting/article.php
 
 ```
 
+# cURL 
 
+``` 
+* Not Recursive 
+* Can use pipes 
+* Upload abilty 
+* Supports more protocols vs Wget like SCP & POP3
 
+Examples: 
+curl -o stuff.html https://web.site/stuff.html
+curl 'https://web.site/submit.php' -H 'Cookie: name=123; settings=1,2,3,4,5,6,7' --data 'name=Stan' | base64 -d > item.png
 
+``` 
 
-
-
-
-
-
-
+# JavaScript(JS)
+```
 
 
 
 
 ```
+# Enumeration 
+```
+* Legitimate Surfing 
+* Tools 
+- NSE scripts 
+- Nikto 
+Burp suite (outside class)
+
+```
+# Cross-Site Scipting (XSS) Overview 
+
+```
+* Insertion o farbitary code into a webpage, that excutes in browser of visitors 
+* Unsanitized GET,POST, and PUT methods allow JS to be placed on websites 
+* Often found in forums that allow HTML
+
+```
+
+# Reflected XSS 
+
+```
+* Most common form of XSS 
+* transient, occurs in erro rmessages or serach results 
+* Delivered through intermediate media, such as a link in an email 
+* Characters that are normally illegal in URLs can be Base64 encded 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
