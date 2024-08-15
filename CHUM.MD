@@ -41,8 +41,9 @@ ssh -S /tmo/jump jump -O cancel -D9050
 
 # Penetration Testing 
 
+
+## 6 Phases
 ```
-## 6 Phases 
 * Mission definition 
 * Recon 
 * Footprinting 
@@ -52,7 +53,6 @@ ssh -S /tmo/jump jump -O cancel -D9050
 
 ### Phase 1 Mission definition 
 * Define Goals, scope and RoE
-* 
 
 ### Phase 2 Recon 
 
@@ -100,6 +100,7 @@ ssh -S /tmo/jump jump -O cancel -D9050
 - Server
 - Set-Cookie 
 
+* ?var=hi -> Sends a GET request for specified variable to web server 
 ```
 
 # Wget 
@@ -132,13 +133,20 @@ curl 'https://web.site/submit.php' -H 'Cookie: name=123; settings=1,2,3,4,5,6,7'
 
 # JavaScript(JS)
 ```
+* Allows websites to interact with the client
 
+* JavaScript runs on the client’s machine
+
+* Coded as .js files, or in-line of HTML
+
+* changeText()
 
 
 
 ```
 # Enumeration 
 ```
+* ROBOTS.TXT -> 
 * Legitimate Surfing 
 * Tools 
 - NSE scripts 
