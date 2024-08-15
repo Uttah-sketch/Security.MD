@@ -193,6 +193,19 @@ ile upload
 # Command Injection 
 
 ```
+* ';' to run you own set commands 
+* can be utilized to enumerate directories and files 
+* var/www/html -> apache home directory 
+* Can be used to upload public ssh key 
+* make directory for ssh on webserver
+* regenertae public and private keys 
+  - ssh-keygen -t rsa -b 4096 
+  - cat ../../.ssh/id_rsa.pub
+  - echo "entire rsa key" > /var/www/.ssh/authorized_keys
+  - ssh www-data@<ip>
+
+
+
 
 ```
 
