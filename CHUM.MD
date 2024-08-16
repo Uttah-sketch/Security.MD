@@ -213,15 +213,39 @@ ile upload
 
 ```
 
+# Web Day 2 
+## SQL Injections 
+
+```
+* SQL 
+- Structured Query Language-ANSI 
+- Additional Commands added by vendors 
+- Select and Union 
+
+```
+# SQL Commands  
+```
+* mysql -> used to drop into sql server 
+* show databases ; -> dumps databases to screen 
+* use information_schema : -> drops into specified database 
+* show columns from columns ; -> displays different fields within the database
+  - Table_schem
+  - Table_name 
+  - Column_name 
+* select table_name from information_schema.columns ; - displays table_name columns
+* select table_name,column_name from information_schema.columns ; - displays table_name columns
+* select table_schema,table_name,column_name from information_schema.columns ; - displays table_name columns
+* show tables from sessions ; 
+* show columns from session.tires ;
+* select tireid,name,size from session.Tires ;
+* select tireid,name,size from session.Tires UNHION SELECT name,type,cost from session.car ;
+* select tireid,name,size,4 from session.Tires UNHION SELECT name,type,cost,color from session.car ; -> using 4 as a place holder to display new option 
 
 
 
 
 
-
-
-
-
+```
 
 
 
