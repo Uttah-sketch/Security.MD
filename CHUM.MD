@@ -319,6 +319,11 @@ Run find to find jump esp -> find /b 0xf7de1000, 0xffffe000 0xff, 0xe4 # beggini
 copy and paste first 4 addresses after running find command 
 convert from big endian to little endian 
 After converting replace eip with first converted memory location 
+scp exploit file over to machin e
+find eip for that machine 
+find new shell for target machine
+If permissions denied, modify exploit shell to said command trying to run 
+
 
 Msfconsole shell code: 
 msfdb init -> initialze database 
