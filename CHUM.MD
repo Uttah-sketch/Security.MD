@@ -303,7 +303,7 @@ UNION SELECT TABLE_CATALOg,TABLE_SCHEMA,TABLE_NAME FROM information.schema.table
 * GDB, MONA,IMMUNITY 
 * BASH, PYTHON
 ```
-# Linux Explotation 
+# Linux Explotation Dev. 
 ```
 - Check for arugments -> ./exe <<<$(echo "AAAAAAAAAAAAAAAAA"
 - Enter gdb 
