@@ -512,11 +512,39 @@ s.close()
 
 ```
 
+# Priv esc, Persistence and Track Covering Windows
+## Modes/Levels 
+```
+* Kernel vs. User 
+* Privilieged vs. Unpriviliged 
+```
+## Win. Access Control Model 
+```
+* Access Tokens 
+* Security Descriptors 
+  - DACl 
+  - SACL 
+  - ACE's
+```
+## Windows Integrity 
+```
+* Untrusted -> Anonymous SID access tokens 
+* Low -> Everyone SID access token 
+* Medium -> Authenticated Users
+* High -> Administrators 
+* System -> System Services (LocalSystem)
+```
+## UAC 
+```
+* Notification Settings
+* Prompt for Privilege Escalation 
+* reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -> Run to view UAC settings 
+```
+## 
+```
 
 
-
-
-
+```
 
 
 
