@@ -566,12 +566,51 @@ s.close()
 * auditpol /get /category:*
 * auditpol /get /category:* | findstr /i "success failure"
 
+```
+# Linux Post Exploitation 
+```
+* Sudo -l -> Enumerate what you can sudo 
+* SUID/SGID bit -> Allows regular users access to higher privileges/owner 
+* GTFO Bins: https://gtfobins.github.io/gtfobins/tcpdump/
+* find cand be utilized to look for files with the SUID/SGID bit on 
+  - find / -type f -perm 4000 -ls 2>/dev/null
 
 
+* Insecure Permissions 
+  - CRON 
+  - World-Writable Files and directories 
+  - Dot. in PATH 
+* CRONTAB
+  - crontab -l 
+  - crontab -e -> edit a new or existing cronjob 
+  - crontab -r -> Delete crontab; -u -> specific user crontab 
+* System level cronjobs -> /etc/crontab 
+* User Level cronjobs -> /var/spool/cron/crontabs or /var/spool/cron
+  - https://crontab.guru/ -> Website for formatting cron 
+
+
+* World writable files/folders 
+* find / -type d -perm /2 -ls 2>/dev/null
+* ls -latr -> most recently modified files at the bottom 
+
+
+* Dot in path "."
+  - current working directory
+
+* Persitence 
+  * Adding/Hijacking a User account 
+  - Pros -> Less Footprint, Human Aspect 
+  - Cons -> User could change passwd, Working Jours 
+
+
+* Covering tracks 
+  * First Step -> Plan 
+    - What will happen if I do X
+    - Checks 
+    - Hide 
 
 
 ```
-
 
 
 
