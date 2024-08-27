@@ -600,7 +600,7 @@ s.close()
 * Persitence 
   * Adding/Hijacking a User account 
   - Pros -> Less Footprint, Human Aspect 
-  - Cons -> User could change passwd, Working Jours 
+  - Cons -> User could change passwd, Working Jours l
 
 
 * Covering tracks 
@@ -608,6 +608,32 @@ s.close()
     - What will happen if I do X
     - Checks 
     - Hide 
+    - Artifacts 
+
+*  NIX-ism 
+  - Unset HISTFILE 
+  - Ne aware of init level 
+  - ps -p1 -> view system type 
+
+* Logs for covering track s
+  - lastlog, btmp
+  - su log 
+  - utmp
+
+* Cleaning the Logs 
+* Save inode 
+  - mv vs cp vs cat 
+* Know what is being moved 
+
+* Timestomp 
+touch -c -t 201603051015 1.txt   # Explicit
+touch -r 3.txt 1.txt # Reference
+
+* Remote Logging 
+  - Check Config 
+  - ID servers 
+  - ID whixch lags are being shipped 
+* /etc/rsyslog.conf
 
 
 ```
