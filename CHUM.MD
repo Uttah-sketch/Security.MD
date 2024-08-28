@@ -3,7 +3,7 @@
 HOUT-005-M 
 STACK # 19 
 PASS: NGhXitkmKFkviR3
-IP: 10.50.37.133
+IP: 10.50.37.133 Dry Run: 10.50.41.232
 Linux op stations: 192.168.65.20, 10.50.37.248
 Windws OP: 192.168.65.10, 10.50.38.70
 Practice SQL IP: 10.50.29.140
@@ -634,6 +634,11 @@ touch -r 3.txt 1.txt # Reference
   - ID servers 
   - ID whixch lags are being shipped 
 * /etc/rsyslog.conf
+* Reading Rsyslog -> <facility>.<priority>
+* EX: *.*  @192.168.10.254:514 
+      *.* action(type="omfwd" target="192.168.10.254" port="514" protocol="udp")
+* RFC 5424 -> RFC for syslog 
+
 
 
 ```
