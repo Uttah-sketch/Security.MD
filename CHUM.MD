@@ -9,6 +9,12 @@ Windws OP: 192.168.65.10, 10.50.38.70
 Practice SQL IP: 10.50.29.140
 
 ```
+# TEST 
+```
+19	HOUT-005-M	5wLrwH0HBqIoLSK	10.50.42.62
+
+```
+
 # Control Socket
 ```
 ## Set up control Socket 
