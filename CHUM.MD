@@ -11,7 +11,7 @@ Practice SQL IP: 10.50.29.140
 ```
 # TEST 
 ```
-19	HOUT-005-M	5wLrwH0HBqIoLSK	10.50.42.62
+
 
 ```
 
