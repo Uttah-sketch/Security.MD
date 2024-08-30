@@ -156,7 +156,7 @@ curl 'https://web.site/submit.php' -H 'Cookie: name=123; settings=1,2,3,4,5,6,7'
 
 ```
 # Enumeration 
-```
+``` 
 * ROBOTS.TXT -> 
 * Legitimate Surfing 
 * Tools 
